@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://FranciscoBenitezDigital.github.io/blog-fbd/sitemap.xml
+Sitemap: https://blog.franciscobenitez.digital/sitemap.xml

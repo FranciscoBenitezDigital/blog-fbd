@@ -1,25 +1,6 @@
-function loadArticles() {
-    // Supongamos que 'rows' es el array de artículos obtenidos de alguna fuente.
-    // Aquí el código original que queremos reemplazar:
-    // allArticles = rows
-    //   .filter(function(r) { return String(r.publicado).toUpperCase() === 'TRUE'; })
-    //   .sort(function(a, b) { return new Date(b.fecha) - new Date(a.fecha); });
-
-    allArticles = rows
-      .map(function(r, i) { r.__idx = i; return r; })
-      .filter(function(r) { return String(r.publicado).toUpperCase() === 'TRUE'; })
-      .sort(function(a, b) {
-        const diff = new Date(b.fecha) - new Date(a.fecha);
-        if (diff !== 0) return diff;
-        return b.__idx - a.__idx;
-      });
-
-    // El resto del código que maneja la renderización queda igual...
-  }
-
 const PAGE_ID = '5664';
   const SHEET_ENDPOINT = `https://paymegpt.com/api/public/landing-pages/${PAGE_ID}/sheet-data`;
-  const ARTICLE_BASE_URL = 'https://blog.franciscobenitez.digital/articulo/?slug='; // TODO: cambiar a URL bonita cuando sincronicemos a GitHub
+  const ARTICLE_BASE_URL = 'https://blog.franciscobenitez.digital/articulo/?slug=';
 
   const headerEl = document.getElementById('site-header');
   const spacerEl = document.getElementById('header-spacer');
@@ -123,8 +104,13 @@ const PAGE_ID = '5664';
       const rows = Array.isArray(json) ? json : (json.rows || json.data || []);
 
       allArticles = rows
+        .map(function(r, i) { r.__idx = i; return r; })
         .filter(function(r) { return String(r.publicado).toUpperCase() === 'TRUE'; })
-        .sort(function(a, b) { return new Date(b.fecha) - new Date(a.fecha); });
+        .sort(function(a, b) {
+          const diff = new Date(b.fecha) - new Date(a.fecha);
+          if (diff !== 0) return diff;
+          return b.__idx - a.__idx;
+        });
 
       document.getElementById('loading-grid').style.display = 'none';
       buildFilters();

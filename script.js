@@ -1,6 +1,6 @@
 const PAGE_ID = '5664';
   const SHEET_ENDPOINT = `https://paymegpt.com/api/public/landing-pages/${PAGE_ID}/sheet-data`;
-  const ARTICLE_BASE_URL = 'https://paymegpt.com/p/ndpGT4q?slug='; // TODO: cambiar a URL bonita cuando sincronicemos a GitHub
+  const ARTICLE_BASE_URL = 'https://blog.franciscobenitez.digital/articulo/?slug='; // TODO: cambiar a URL bonita cuando sincronicemos a GitHub
 
   const headerEl = document.getElementById('site-header');
   const spacerEl = document.getElementById('header-spacer');

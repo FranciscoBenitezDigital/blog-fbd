@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.franciscobenitez.digital/</loc>
-    <lastmod>2026-07-22T05:11:16.566Z</lastmod>
+    <loc>https://blog.franciscobenitez.digital/articulo/</loc>
+    <lastmod>2026-07-22T05:18:46.448Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blog.franciscobenitez.digital/articulo/</loc>
-    <lastmod>2026-07-22T05:11:08.212Z</lastmod>
+    <loc>https://blog.franciscobenitez.digital/</loc>
+    <lastmod>2026-07-22T05:18:40.771Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 
 
 <!-- SEO Meta Tags -->
@@ -17,6 +20,7 @@
 <meta name="twitter:title" content="Blog — Francisco Benítez Digital" />
 <meta name="twitter:description" content="Noticias de IA de la semana, explicadas para tu negocio. Automatización, herramientas y estrategia digital para PyMEs." />
 <!-- End SEO Meta Tags -->
+<meta name="sheet-data-url" content="https://paymegpt.com/api/public/landing-pages/5664/sheet-data">
 <script data-lp-token-hydrate>
 (function(){try{
   var slug="lp-mruw8mqk-98wr2";
@@ -302,27 +306,49 @@
 </head>
 <body>
 
-<header data-section="header">
-  <div class="logo"><span class="dot"></span> Francisco Benítez <span style="color:var(--cyan)">Digital</span></div>
-  <nav>
-    <a href="https://franciscobenitez.digital">El Sistema</a>
-    <a href="https://franciscobenitez.digital#diagnostico">Diagnóstico</a>
-    <a href="/" class="active">Blog</a>
-    <a href="https://franciscobenitez.digital" class="back">← Volver al Sistema</a>
-    <a href="https://franciscobenitez.digital#asistente" class="cta">Hablar con el Asistente IA</a>
-  </nav>
+<header id="site-header" data-section="header">
+  <div class="header-inner">
+    <a href="https://franciscobenitez.digital" class="logo">
+      <img src="https://paymegpt.com/objects/quick-uploads/36/7d969950b4419a9c.jpg" alt="Logo Francisco Benítez Digital" class="logo-img">
+      <span class="logo-text">Francisco Benítez <span class="grad-text">Digital</span></span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="https://franciscobenitez.digital/#sistema">El Sistema</a>
+      <a href="https://franciscobenitez.digital/#solucion">Solución</a>
+      <a href="https://franciscobenitez.digital/#diagnostico">Diagnóstico</a>
+      <a href="https://franciscobenitez.digital/#acerca">Acerca de</a>
+      <a href="/" class="active">Blog</a>
+      <a href="https://franciscobenitez.digital/#chat">Hablar con IA</a>
+    </nav>
+    <div class="header-actions">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/franciscobenitezdigital/" target="_blank" aria-label="Instagram"><img src="https://fbdigitalplaza.com/wp-content/uploads/2025/12/iglogofbd.jpeg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/franciscobenitezdigital" target="_blank" aria-label="Facebook"><img src="https://fbdigitalplaza.com/wp-content/uploads/2025/12/fblogofbd.jpeg" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@FranciscoBenitezDigital" target="_blank" aria-label="YouTube"><img src="https://fbdigitalplaza.com/wp-content/uploads/2025/12/youtubelogofbd.jpeg" alt="YouTube"></a>
+        <a href="https://www.tiktok.com/@franciscobenitezdigital" target="_blank" aria-label="TikTok"><img src="https://fbdigitalplaza.com/wp-content/uploads/2025/12/tiktoklogofbd.jpeg" alt="TikTok"></a>
+      </div>
+      <a href="https://franciscobenitez.digital/#chat" class="btn-primary">Hablar con el Asistente IA</a>
+      <button id="hamburger" aria-label="Menú"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="https://franciscobenitez.digital/#sistema">El Sistema</a>
+    <a href="https://franciscobenitez.digital/#solucion">Solución</a>
+    <a href="https://franciscobenitez.digital/#diagnostico">Diagnóstico</a>
+    <a href="https://franciscobenitez.digital/#acerca">Acerca de</a>
+    <a href="/">Blog</a>
+    <a href="https://franciscobenitez.digital/#chat">Hablar con IA</a>
+    <a href="https://franciscobenitez.digital/#chat" class="btn-primary mobile-cta">Hablar con el Asistente IA</a>
+  </div>
 </header>
+<div id="header-spacer"></div>
 
 <section class="hero" data-section="hero">
   <div class="eyebrow">Blog · IA aplicada a negocios</div>
   <h1>Lo que está pasando en <span>Inteligencia Artificial</span>, explicado para tu negocio.</h1>
   <p>Noticias de IA de la semana, traducidas a lo que realmente significan para ti — sin humo, sin tecnicismos innecesarios.</p>
-  <div class="filters">
-    <span class="chip active">Todo</span>
-    <span class="chip">Automatización</span>
-    <span class="chip">Herramientas IA</span>
-    <span class="chip">Negocios</span>
-    <span class="chip">Marketing</span>
+  <div class="filters" id="filters">
+    <button class="chip active" data-filter="Todo">Todo</button>
   </div>
 </section>
 
@@ -331,33 +357,17 @@
   <span>Actualizado cada semana</span>
 </div>
 
-<div class="grid" data-section="posts">
-
-  <div class="card">
-    <div class="thumb"><span class="tag">Negocios</span></div>
-    <div class="card-body">
-      <div class="meta">Negocios <span class="sep"></span> 21 jul 2026 <span class="sep"></span> 9 min</div>
-      <h3>Solo el 13% de las empresas en México ha escalado su IA — y no es por falta de presupuesto</h3>
-      <p>Un estudio de Accenture México e IPADE revela qué separa a las empresas que sí escalan la IA del resto que se queda en pruebas piloto.</p>
-      <a class="read" href="/solo-13-por-ciento-escala-ia">Leer artículo →</a>
-    </div>
-  </div>
-
-  <div class="card soon">
-    <div class="thumb"><span class="tag">Muy pronto</span></div>
-    <div class="card-body">
-      <div class="meta">Nuevo artículo cada semana</div>
-      <h3>El próximo artículo se publica pronto</h3>
-      <p>Cada semana agregamos una noticia real de IA, explicada para tu negocio. Vuelve pronto para ver lo nuevo.</p>
-    </div>
-  </div>
-
-</div>
+<div id="loading-grid">Cargando artículos…</div>
+<div id="empty-state">Todavía no hay artículos publicados. Vuelve pronto.</div>
+<div class="grid" data-section="posts" id="posts-grid" style="display:none;"></div>
 
 <footer data-section="footer">
   <div>© 2026 Francisco Benítez Digital · Blog</div>
   <div><a href="https://franciscobenitez.digital">← Volver al sistema principal</a></div>
 </footer>
 
+
+
+  <script src="script.js"></script>
 </body>
 </html>
